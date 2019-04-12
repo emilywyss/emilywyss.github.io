@@ -1,1 +1,88 @@
-hello world.
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Nathaniel and Emily Wedding R.S.V.P.</title>
+	<meta name="description" content="Nathaniel and Emily's Wedding R.S.V.P.">
+	<meta name="author" content="Emily Wyss">
+
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		html, body, .page-container {
+		    height: 100%;
+		    margin: 0;
+		}
+		body {
+			font-family: 'Cookie', cursive;
+		}
+		.page-container {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			align-content: center;
+			height: 100%;
+			width: 100%;
+		}
+		.photos-container, .content-container {
+			flex-grow: 1;
+			width: 50%;
+		}
+		.photos-container {
+			background: url('images/image1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.content-container {
+			align-self: center;
+			padding: 100px;
+			text-align: center;
+		}
+		.main-header {
+			font-size: 5.5em;
+			color: #57081B;
+			line-height: 0.3;
+		}
+		.second-header {
+			font-size: 3em;
+			color: #57081b;
+		}
+		.heart-icon {
+			width: 500px;
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+		.rsvp-button {
+			margin-top: 50px;
+			color: white;
+			text-decoration: none;
+			display: inline-block;
+			background: #961332;
+			padding: 20px 75px;
+			border-radius: 6px;
+			font-size: 25px;
+			font-family: 'georgia', serif;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="page-container">
+		<div class="photos-container"></div>
+		<div class="content-container">
+			<img src="images/heart-icon.png" alt="" class="heart-icon">
+			<h1 class="main-header">We're getting married...</h1>
+			<h2 class="second-header">(And you're invited!)</h2>
+			<a href="https://raceroster.com/events/2019/22430/nathaniel-and-emilys-wedding-rsvp" class="rsvp-button">R.S.V.P.</a>
+		</div>
+	</div>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
