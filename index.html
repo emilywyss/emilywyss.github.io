@@ -7,6 +7,8 @@
 	<title>Nathaniel and Emily Wedding R.S.V.P.</title>
 	<meta name="description" content="Nathaniel and Emily's Wedding R.S.V.P.">
 	<meta name="author" content="Emily Wyss">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -16,7 +18,6 @@
 			box-sizing: border-box;
 		}
 		html, body, .page-container {
-		    height: 100%;
 		    margin: 0;
 		}
 		body {
@@ -26,8 +27,7 @@
 			display: flex;
 			flex-direction: row;
 			align-items: stretch;
-			align-content: center;
-			height: 100%;
+			align-content: stretch;
 			width: 100%;
 		}
 		.photos-container, .content-container {
@@ -38,25 +38,28 @@
 			background: url('images/image1.png');
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-position: center;
+			background-position: bottom center;
 		}
 		.content-container {
 			align-self: center;
 			padding: 100px;
 			text-align: center;
+			position: relative;
 		}
 		.main-header {
-			font-size: 5.5em;
+			font-size: 5em;
 			color: #57081B;
-			line-height: 1.1;
+			line-height: 1;
+			margin-bottom: 20px;
 		}
 		.second-header {
 			font-size: 3em;
 			color: #57081b;
+			margin-top: 0;
 		}
 		.heart-icon {
-			width: 500px;
-			display: inline-block;
+			width: 100%;
+			max-width: 500px;
 			margin-bottom: 30px;
 		}
 		.rsvp-button {
@@ -73,6 +76,41 @@
 		.rsvp-button:hover {
 			background: #7B1029;
 		}
+		.made-with-love {
+			margin-top: 40px;
+		}
+		.love-icon {
+			vertical-align: middle;
+			width: 25px;
+		}
+		.love-text {
+			font-family: 'georgia', serif;
+			color: #A97877;
+			vertical-align: middle;
+		}
+		@media only screen and (max-width: 992px) {
+			.page-container {
+				display: block;
+			}
+			.main-header {
+				font-size: 4em;
+			}
+			.second-header {
+				font-size: 2em;
+			}
+			.photos-container {
+				width: 100%;
+				height: 500px;
+				display: block;
+				background-position: center center;
+			}
+			.content-container {
+				display: block;
+				width: 100%;
+				height: auto;
+				padding: 30px;
+			}
+		}
 	</style>
 </head>
 
@@ -84,8 +122,11 @@
 			<h1 class="main-header">We're getting married...</h1>
 			<h2 class="second-header">(And you're invited!)</h2>
 			<a href="https://raceroster.com/events/2019/22430/nathaniel-and-emilys-wedding-rsvp" class="rsvp-button">R.S.V.P.</a>
+			<div class="made-with-love">
+				<img src="images/love.png" alt="" class="love-icon">
+				<span class="love-text">Made with love by Emily Wyss Designs</span>
+			</div>
 		</div>
 	</div>
-	<script src="js/scripts.js"></script>
 </body>
 </html>
